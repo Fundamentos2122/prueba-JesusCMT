@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Párrafos dentro de div1 */
+        #div1 p {
+            text-align: center;
+        }
+
+        /* Párrafos dentro de div1 en el primer nivel */
+        #div1 > p {
+            border: 1px solid black;
+        }
+        
+        /* Párrafos al lado de un div, al mismo nivel (no dentro) */
+        div + p {
+            color: red;
+        }
+
+        /* Párrafos al mismo nivel que un div, en cualquier ubicación */
+        div ~ p {
+            text-indent: 20px;
+        }
+
+        /* Links hijos de párrafos que estén dentro de un div */
+        div p > a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="div1">
+        <div>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. A corrupti iusto eius, libero est vitae, quas aut totam animi vel eos dolorem blanditiis suscipit dolorum, beatae harum. Ducimus, id minus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta natus assumenda vel officiis error eius itaque molestiae totam! Non ullam rerum quidem rem impedit nam, cupiditate cum culpa commodi! Officia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore facilis laborum, cupiditate voluptates cum quae blanditiis saepe sapiente delectus! Esse vel omnis aspernatur culpa at rem tenetur obcaecati. Aliquid, facere?    
+            </p>
+        </div>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque laudantium, dolor repudiandae nisi quaerat recusandae eaque a repellendus sed et laborum eligendi quo aspernatur harum delectus atque quasi minima. Repellat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, odit. Amet inventore esse dolorum nulla, quasi laborum, rerum beatae qui provident iste sunt ullam delectus voluptatem aut, ratione magnam veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptate minima commodi quo illum a explicabo numquam rerum consequuntur atque aliquam voluptatum accusantium doloremque, ut tempora tenetur sequi praesentium quis.
+        </p>
+    </div>
+    
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam excepturi eligendi, dignissimos eos quis sunt ex sed totam deleniti eveniet aliquam dolor explicabo iure, obcaecati tempora voluptatum perferendis? At, dicta. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, modi. Ratione sequi laborum necessitatibus eaque. Fugit accusantium natus, iusto illum aliquam corrupti dolorum assumenda pariatur soluta ullam vero veritatis odit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error consequuntur a itaque, fugit nostrum maiores eos sequi suscipit, repellendus architecto nesciunt dolores placeat consectetur repudiandae! Iusto non iure corrupti distinctio?
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ducimus iusto natus hic explicabo perspiciatis molestias? Eaque quam magni perferendis unde recusandae? Amet, beatae voluptatibus sequi porro eos obcaecati sit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloremque mollitia consequatur culpa voluptate distinctio facere delectus voluptates rem laborum inventore natus veritatis odio iste, dolores porro explicabo ea. Fugiat!
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis quae quod eius facere adipisci ipsam illo saepe, nam sapiente eum veritatis dolorem, atque quis ex aliquam debitis autem doloremque quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, magnam et perferendis repellendus, blanditiis dolorem, iure ipsum hic veritatis explicabo natus error vero at praesentium officiis ipsa harum laudantium odio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fugit autem libero. Fugiat qui alias laudantium maiores delectus fuga cum odio, nisi omnis, incidunt illum eum consectetur voluptas eos dignissimos.
+    </p>
+
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nisi, porro aut neque corporis laborum natus ea delectus velit nam sapiente. Reiciendis, dolor magnam voluptatum consectetur possimus harum aliquam saepe.
+            <a href="">Hola Mundo</a>
+            <a href="">Otro link</a>
+        </p>
+    </div>
+
+</body>
+</html>

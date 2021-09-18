@@ -1,0 +1,53 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    color:red;
+}
+
+#p1 {
+    text-align: justify;
+}
+
+.border{
+    border: 1px solid black;
+}
+
+/* Aplica para todos los que tengan este atributo */
+/* Se puede usar también
+[attr1] { */
+div[attr1] {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* El valor del atributo debe ser igual */
+[attr1 = "Párrafo-1"]{
+    font-size: 24px;
+}
+
+/* El valor del atributo comienza con la palabra dada */
+/* Las palabras en este caso (y nada más aquí) se dividen con guiones '-' */
+[attr1 |= "Párrafo"]{
+    font-weight: bold;
+}
+
+/* El valor del atributo comienza con la cadena dada */
+[attr1 ^= "Pá"]{
+    color: brown;
+}
+
+/* El valor del atributo termina con la cadena dada */
+[attr1 $= "s"]{
+    margin-left: 30px;
+}
+
+/* El valor del atributo contiene la palabra dada */
+[attr1 ~= "Párrafo"]{
+    border: 1px solid black;
+}
+
+/* El valor del atributo contiene la cadena dada */
+[attr1 *= "u"]{
+    text-transform: uppercase;
+}

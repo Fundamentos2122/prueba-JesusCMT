@@ -5,20 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios</title>
+    <style>
+        [name="conditions"]:checked{
+            margin-left: 50px;
+        }
+        /*![type="text"]:focus{*/
+        input:focus{
+            box-shadow: 5px 5px 10px red;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        #boton_fake{
+            border: 1px solid darkgray;
+            border-radius: 2px;
+        }
+        #boton_fake:hover{
+            cursor: pointer;
+        }
+        input:required{
+            color: darkred;
+        }
+        #p_aux::after{
+            content: url("UASLP.png");
+        }
+        #p_aux::first-letter{
+            text-transform: uppercase;
+            font-size: 32px;
+        }
+        #p_aux::first-line{
+            color: blue;
+        }
+        #p_aux::selection{
+            background-color: yellow;
+        }
+        p#ejemplo.p2{
+            color: violet;
+        }
+        .p1{
+            color:red;
+        }
+    </style>
 </head>
 <body>
     <form>
         <label for="username">Nombre de usuario</label>
-        <input type="text" name="username">
+        <input type="text" name="username" autocomplete="off">
         <br>
         <label for="birthday">Fecha de nacimiento</label>
         <input type="date" name="birthday">
         <br>
         <label for="age">Edad</label>
-        <input type="number" name="age" step="0.5">
+        <input type="number" name="age" step="0.5" required>
         <br>
-        <label for="conditions">Acepta los términos y condiciones</label>
         <input type="checkbox" name="conditions">
+        <label for="conditions">Acepta los términos y condiciones</label>
         <br>
         <label for="color">Color favorito</label>
         <input type="color" name="color">
@@ -52,5 +93,16 @@
         <!--Botón que no envía el formulario-->
         <button type="button">Guardar</button>
     </form>
+    <br>
+    <br>
+    <div id="boton_fake">
+        Presiona aquí
+    </div>
+    <p id="p_aux">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat dolore consequuntur nobis neque ut aut minus voluptatum porro non provident doloremque perspiciatis minima itaque, explicabo veritatis unde! Quo, aliquid accusamus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni pariatur laborum molestiae cum eaque nobis doloribus ullam, dolore dolorum error, ut iure nostrum ipsa, sed sapiente? Dolores quo eius culpa.
+    </p>
+    <p id="ejemplo" class= "p1 p2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptas aliquam accusantium, impedit saepe rem? Libero voluptatum tempora optio eaque rem aliquam perferendis distinctio debitis unde quod, fuga atque <asperiores class="lo"></asperiores>
+    </p>
 </body>
 </html>
