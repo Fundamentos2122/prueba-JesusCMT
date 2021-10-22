@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="title">Hola mundo</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ratione provident, cum atque et inventore tempore quibusdam, maiores assumenda dolor tempora quidem vel ea veritatis deleniti doloribus! Voluptatibus, asperiores quaerat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde aut atque dolorum quia sed cupiditate, sapiente aliquam reprehenderit, est nisi impedit aperiam debitis dolores ea ipsum? Ratione soluta distinctio eum?</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, cupiditate. Similique sunt consequatur eius aut sapiente, sequi unde minus cupiditate modi praesentium quidem, temporibus voluptas eos est recusandae at labore.</p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere quibusdam inventore cumque, quia excepturi blanditiis, corporis totam ratione tempora quidem libero optio aliquam quis tempore, dolorem voluptates aliquid odit? Officiis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum aliquam repellendus vero minima! Aperiam fugiat pariatur est repudiandae, vel ad ab magni dolorum dolore eos nam. Libero voluptatum sint illum.</p>
+
+    <script>
+        var title=document.getElementById("title");
+        title.innerText="Nuevo título";
+
+        var p = document.getElementsByTagName("p");
+
+        var h2 = document.createElement("h2");
+        var text = document.createTextNode("Segundo encabezado");
+        h2.appendChild(text);
+        console.log(h2);
+
+        document.insertBefore(h2, p[i]);
+
+        var d_h2 document.getElementById("h2");
+        d_h2.innerHTML = "<h2>Segundo encabezado</h2>";
+    </script>
+
+</body>
+</html>
